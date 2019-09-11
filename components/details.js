@@ -23,7 +23,7 @@ const Details = ({ name, closePreview }) => {
 		<div className="details-preview" ref={ref}>
 			<div className="heading">
 				<div className="flex">
-					<img src={`/static/icons/${name}.svg`} width="25px" />
+					<img src={`/static/icons/${lang}.svg`} width="25px" />
 					<h4>{name}</h4>
 				</div>
 				<button className="default-btn" onClick={closePreview}>
