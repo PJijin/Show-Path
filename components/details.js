@@ -46,7 +46,7 @@ const Details = ({ name, closePreview }) => {
 					></iframe>
 				)}
 			</div>
-			{courses.length && (
+			{courses.length !== 0 && (
 				<div>
 					<h4>Courses</h4>
 					{courses.map(course => {
@@ -64,7 +64,7 @@ const Details = ({ name, closePreview }) => {
 				</div>
 			)}
 
-			{posts.length && (
+			{posts.length !== 0 && (
 				<div>
 					<h4>Posts</h4>
 					{posts.map(post => {
