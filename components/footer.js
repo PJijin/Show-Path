@@ -5,7 +5,7 @@ export default function Footer() {
 	return (
 		<footer>
 			<div>
-				<a target="_BLANK" rel="noreferrer noopener" href="https://github.com/PJijin">
+				<a target="_BLANK" rel="noreferrer noopener" href="https://github.com/PJijin/Show-Path">
 					<GitHub></GitHub>
 				</a>
 			</div>
