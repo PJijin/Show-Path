@@ -1,6 +1,8 @@
 import html from './html';
+import javascript from './javascript';
 
 const CourseDetails = {
-	html
+	html,
+	javascript
 };
 export default CourseDetails;
