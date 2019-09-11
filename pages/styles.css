@@ -302,7 +302,7 @@ footer .social-links a {
 		width: 90%;
 	}
 	.app {
-		height: 100vh;
+		height: unset;
 	}
 	.row {
 		width: 78%;
@@ -333,5 +333,10 @@ footer .social-links a {
 
 	.error div {
 		margin: 40px 10px;
+	}
+	footer {
+		justify-content: center;
+		text-align: center;
+		display: block;
 	}
 }

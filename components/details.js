@@ -54,7 +54,11 @@ const Details = ({ name, closePreview }) => {
 							<ul key={course}>
 								<li>
 									<span className={course.type}>{course.type}</span>
-									<a target="_BLANK" rel="noreferrer noopener" href={`${course.url}`}>
+									<a
+										target="_BLANK"
+										rel="noreferrer noopener"
+										href={`${course.url}?ref=showpath.tech`}
+									>
 										{course.name}
 									</a>
 								</li>
@@ -71,7 +75,7 @@ const Details = ({ name, closePreview }) => {
 						return (
 							<ul key={post}>
 								<li>
-									<a target="_BLANK" rel="noreferrer noopener" href={`${post.url}`}>
+									<a target="_BLANK" rel="noreferrer noopener" href={`${post.url}?ref=showpath.tech`}>
 										{post.title}
 									</a>
 								</li>
