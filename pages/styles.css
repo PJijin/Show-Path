@@ -302,7 +302,7 @@ footer .social-links a {
 		width: 90%;
 	}
 	.app {
-		height: 100%;
+		height: 100vh;
 	}
 	.row {
 		width: 78%;
