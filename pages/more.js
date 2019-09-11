@@ -33,10 +33,10 @@ export default function MoreRoadMap() {
 			</h4>
 			<ul>
 				{roadMaps.map(item => {
-					const link = item.replace(/\s+/g, '-').toLowerCase();
+					const type = item.replace(/\s+/g, '-').toLowerCase();
 					return (
 						<li key={item}>
-							<Link href={`/roadmap/${link}`}>
+							<Link href="/roadmap/[type]" as={`/roadmap/${type}`}>
 								<a>{item}</a>
 							</Link>
 						</li>

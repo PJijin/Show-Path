@@ -20,7 +20,7 @@ const Home = () => {
 				<p className="description">Start from 0x01</p>
 
 				<div className="row">
-					<Link href="/roadmap/fullstack">
+					<Link href="/roadmap/[type]" as="/roadmap/fullstack">
 						<a className="card">
 							<h3>Fullstack Developer </h3>
 							<p>
@@ -28,7 +28,7 @@ const Home = () => {
 							</p>
 						</a>
 					</Link>
-					<Link href="/roadmap/machine-learning">
+					<Link href="/roadmap/[type]" as="/roadmap/machine-learning">
 						<a className="card">
 							<h3>Machine Learning </h3>
 							<p>
@@ -37,12 +37,12 @@ const Home = () => {
 							</p>
 						</a>
 					</Link>
-					<Link href="/roadmap/artificial-intelligence">
+					<Link href="/roadmap/[type]" as="/roadmap/artificial-intelligence">
 						<a className="card">
 							<h3>Artificial intelligence </h3>
 							<p>
 								Artificial intelligence (AI) is the simulation of human intelligence processes by
-								machines, especially computer systems.{' '}
+								machines, especially computer systems.
 							</p>
 						</a>
 					</Link>

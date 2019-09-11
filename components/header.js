@@ -2,6 +2,21 @@ import React from 'react';
 import { Map, Sun, Moon, GitMerge, Voicemail, MoreHorizontal } from 'react-feather';
 import Link from 'next/link';
 
+const mainMenu = [
+	{
+		path: 'fullstack',
+		text: 'Web'
+	},
+	{
+		path: 'mobile',
+		text: 'Mobile'
+	},
+	{
+		path: 'desktop',
+		text: 'Software'
+	}
+];
+
 export default function Header({ toggleMode, currentMode: { value }, treeMode, changeTreeMode }) {
 	return (
 		<header>
@@ -12,15 +27,14 @@ export default function Header({ toggleMode, currentMode: { value }, treeMode, c
 				</a>
 			</Link>
 			<div className="menu">
-				<Link href="/roadmap/?type=fullstack" as="/roadmap/fullstack">
-					<a>Web</a>
-				</Link>
-				<Link href="/roadmap/?type=mobile" as="/roadmap/mobile">
-					<a>Mobile</a>
-				</Link>
-				<Link href="/roadmap/?type=desktop" as="/roadmap/desktop">
-					<a>Software</a>
-				</Link>
+				{mainMenu.map(menu => {
+					const type = menu.path;
+					return (
+						<Link key={menu.path} href="/roadmap/[type]" as={`/roadmap/${type}`}>
+							<a>{menu.text}</a>
+						</Link>
+					);
+				})}
 				<Link href="/more" as="/more">
 					<a>
 						<MoreHorizontal />
