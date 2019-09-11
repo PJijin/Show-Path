@@ -17,6 +17,7 @@
 		"react-d3-tree": "^1.14.2",
 		"react-dom": "16.9.0",
 		"react-feather": "^2.0.3",
+		"react-ga": "^2.6.0",
 		"use-dark-mode": "^2.3.1"
 	}
 }

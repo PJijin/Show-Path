@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import ReactGA from 'react-ga';
 
 import Details from '../../components/details';
 import RoadMap from '../../data/roadmap';
@@ -13,6 +14,11 @@ const Tree = dynamic(() => import('react-d3-tree'), {
 
 const ShowRoadMap = ({ treeMode }) => {
 	const [details, setDetails] = useState(null);
+	React.useEffect(() => {
+		ReactGA.initialize('UA-146175118-3');
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, []);
+
 	const router = useRouter();
 	const { type } = router.query;
 
