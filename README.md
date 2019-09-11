@@ -2,7 +2,9 @@
 
 [![Show Path](https://github.com/PJijin/Show-Path/blob/master/preview.png?raw=true 'Show Path')]()
 
-👨‍💻Learning Path for Programmers.
+👨‍💻Learning Path for Programmers
+
+Check live on https://showpath.tech
 
 ## ✨ Features
 
