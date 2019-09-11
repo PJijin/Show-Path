@@ -36,6 +36,7 @@ const ShowRoadMap = ({ treeMode }) => {
 				<title>ShowPath.tech - {name} Path</title>
 			</Head>
 			<Tree
+				initialDepth={1}
 				data={treeData}
 				translate={{ x: 250, y: 350 }}
 				orientation={orientation}
