@@ -301,6 +301,9 @@ footer .social-links a {
 	.details-preview {
 		width: 90%;
 	}
+	.app {
+		height: 100%;
+	}
 	.row {
 		width: 78%;
 		display: block;
