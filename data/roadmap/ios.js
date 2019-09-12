@@ -1,6 +1,7 @@
 const ios = [
 	{
-		name: 'iOS'
+		name: 'iOS',
+		children: [{ name: 'Swift' }, { name: 'React Native' }, { name: 'Flutter' }, { name: 'PhoneGap' }]
 	}
 ];
 export default ios;
