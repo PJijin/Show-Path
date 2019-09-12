@@ -22,7 +22,7 @@ export default function Header({ toggleMode, currentMode: { value }, treeMode, c
 		<header>
 			<Link href="/" as="/">
 				<a className="logo">
-					<Map></Map>
+					<img src="/static/timeline.svg" className={value && 'img-light'} />
 					ShowPath.tech
 				</a>
 			</Link>

@@ -42,6 +42,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	padding: 25px;
+	align-items: center;
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
 
@@ -68,9 +69,17 @@ li {
 
 .logo {
 	display: flex;
+	align-items: center;
 }
-.logo svg {
-	margin-right: 10px;
+.logo img {
+	margin-right: 5px;
+}
+.logo .img-light {
+	webkit-filter: contrast(4) invert(1);
+	-moz-filter: contrast(4) invert(1);
+	-o-filter: contrast(4) invert(1);
+	-ms-filter: contrast(4) invert(1);
+	filter: contrast(4) invert(1);
 }
 
 .app {
