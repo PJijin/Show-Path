@@ -67,6 +67,9 @@ li {
 	background: var(--selection-color);
 }
 
+:focus {
+	outline: 0;
+}
 .logo {
 	display: flex;
 	align-items: center;
