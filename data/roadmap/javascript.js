@@ -21,6 +21,17 @@ const javascript = [
 				]
 			},
 			{
+				name: 'Type Checker',
+				children: [
+					{
+						name: 'Typescript'
+					},
+					{
+						name: 'Flow'
+					}
+				]
+			},
+			{
 				name: 'Task Runners',
 				children: [
 					{
@@ -58,7 +69,11 @@ const javascript = [
 						name: 'Unit Testing',
 						children: [
 							{
-								name: 'Jest'
+								name: 'Jest',
+								legends: {
+									type: 'good',
+									message: 'Good to Know'
+								}
 							},
 							{
 								name: 'Enzyme'
@@ -67,7 +82,11 @@ const javascript = [
 								name: 'Sinon'
 							},
 							{
-								name: 'Mocha'
+								name: 'Mocha',
+								legends: {
+									type: 'good',
+									message: 'Good to Know'
+								}
 							},
 							{
 								name: 'Chai'
@@ -108,6 +127,26 @@ const javascript = [
 							}
 						]
 					}
+				]
+			},
+			{
+				name: 'Module Loader / Bundler',
+				children: [
+					{
+						name: 'webpack',
+						legends: {
+							type: 'good',
+							message: 'Good to Know'
+						}
+					},
+					{
+						name: 'rollup'
+					},
+					{
+						name: 'parcel'
+					},
+					{ name: 'Requirejs / AMD' },
+					{ name: 'Browerify' }
 				]
 			}
 		]

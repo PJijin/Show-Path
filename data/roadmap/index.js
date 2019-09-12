@@ -5,6 +5,8 @@ import css from './css';
 import go from './go';
 import android from './android';
 import php from './php';
+import ruby from './ruby';
+import python from './python';
 import ios from './ios';
 import nodejs from './nodejs';
 import reactjs from './reactjs';
@@ -27,6 +29,8 @@ const RoadMap = {
 	html,
 	javascript,
 	mobile,
+	ruby,
+	python,
 	vue,
 	desktop,
 	ios,

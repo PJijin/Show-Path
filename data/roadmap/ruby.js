@@ -1,42 +1,12 @@
-const php = [
+const ruby = [
 	{
-		name: 'PHP',
+		name: 'Ruby',
 		children: [
 			{
 				name: 'Testing',
 				children: [
 					{
-						name: 'PHPUnit',
-						legends: {
-							type: 'good',
-							message: 'Good to Know'
-						}
-					},
-					{ name: 'PHPSpec' },
-					{ name: 'Codeception' }
-				]
-			},
-			{
-				name: 'Frameworks',
-				children: [
-					{
-						name: 'Laravel',
-						legends: {
-							type: 'good',
-							message: 'Good to Know'
-						}
-					},
-					{ name: 'Symfony' },
-					{ name: 'CodeIgniter' },
-					{ name: 'Slim' },
-					{ name: 'Lumen' }
-				]
-			},
-			{
-				name: 'Package Manager',
-				children: [
-					{
-						name: 'Composer',
+						name: 'RSpec',
 						legends: {
 							type: 'good',
 							message: 'Good to Know'
@@ -45,10 +15,35 @@ const php = [
 				]
 			},
 			{
-				name: 'Debugger / Profiler',
-				children: [{ name: 'xDebug' }, { name: 'XHProf' }, { name: 'New Relic' }, { name: 'Black fire' }]
+				name: 'Frameworks',
+				children: [
+					{
+						name: 'Ruby on Rails',
+						legends: {
+							type: 'good',
+							message: 'Good to Know'
+						}
+					},
+					{ name: 'Sinatara' }
+				]
+			},
+			{
+				name: 'Package Manager',
+				children: [
+					{
+						name: 'RubyGems',
+						legends: {
+							type: 'good',
+							message: 'Good to Know'
+						}
+					}
+				]
+			},
+			{
+				name: 'Debugging',
+				children: [{ name: 'Byebug' }]
 			}
 		]
 	}
 ];
-export default php;
+export default ruby;
