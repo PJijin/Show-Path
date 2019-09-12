@@ -5,11 +5,11 @@ import Link from 'next/link';
 const mainMenu = [
 	{
 		path: 'fullstack',
-		text: 'Web'
+		text: 'Fullstack'
 	},
 	{
 		path: 'mobile',
-		text: 'Mobile'
+		text: 'Mobile Apps'
 	},
 	{
 		path: 'desktop',
