@@ -118,6 +118,12 @@ li {
 	justify-content: space-between;
 	align-items: center;
 }
+
+.heading .flex {
+	display: flex;
+	align-items: center;
+}
+
 .description {
 	font-size: 12px;
 	line-height: 1.5rem;
@@ -341,7 +347,9 @@ footer .social-links a {
 
 @media screen and (max-width: 600px) {
 	.details-preview {
-		width: 90%;
+		width: unset;
+		overflow: unset;
+		height: unset;
 	}
 	.app {
 		height: 100vh;
