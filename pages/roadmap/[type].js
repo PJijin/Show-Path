@@ -8,7 +8,6 @@ import Details from '../../components/details';
 import RoadMap from '../../data/roadmap';
 import NotFound from '../../components/notFound';
 import ReactTooltip from 'react-tooltip';
-import { downloadImage } from './util';
 
 const Tree = dynamic(() => import('react-d3-tree'), {
 	ssr: false
@@ -52,7 +51,6 @@ const ShowRoadMap = ({ treeMode }) => {
 	const treeData = RoadMap[type];
 	const orientation = treeMode ? 'vertical' : 'horizontal';
 	const name = type && type.charAt(0).toUpperCase() + type.slice(1);
-	const exportPic = async () => downloadImage(capture.current);
 
 	// if (!RoadMap[type]) {
 	// 	return <NotFound />;
