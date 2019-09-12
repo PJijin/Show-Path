@@ -12,6 +12,24 @@ const Tree = dynamic(() => import('react-d3-tree'), {
 	ssr: false
 });
 
+const NodeLabel = ({ className, nodeData: { name }, setDetails }) => {
+	const [imgSource, setImageSource] = useState(`/static/icons/${name.toLowerCase()}.svg`);
+
+	return (
+		<div onClick={() => setDetails(name)} className="nodeNameBase show-link">
+			<img
+				width="15px"
+				height="15px"
+				src={imgSource}
+				onError={() => {
+					setImageSource(`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`);
+				}}
+			/>
+			{name}
+		</div>
+	);
+};
+
 const ShowRoadMap = ({ treeMode }) => {
 	const [details, setDetails] = useState(null);
 	React.useEffect(() => {
@@ -38,10 +56,17 @@ const ShowRoadMap = ({ treeMode }) => {
 			<Tree
 				initialDepth={1}
 				data={treeData}
+				allowForeignObjects
+				nodeLabelComponent={{
+					render: <NodeLabel setDetails={setDetails} className="myLabelComponentInSvg" />,
+					foreignObjectWrapper: {
+						y: 24
+					}
+				}}
 				translate={{ x: 250, y: 350 }}
 				orientation={orientation}
 				onClick={(nodeData, evt) => {
-					setDetails(nodeData.name);
+					// setDetails(nodeData.name);
 				}}
 			/>
 			{details && <Details name={details} closePreview={() => setDetails(null)} />}

@@ -239,8 +239,9 @@ li {
 }
 
 .nodeNameBase {
-	fill: var(--nodeNameBaseFill) !important;
-	stroke: var(--nodeNameBaseStroke) !important;
+	font-family: monospace;
+	align-items: center;
+	display: flex;
 }
 
 /* Error Page */
@@ -284,6 +285,10 @@ li {
 	border-radius: 5px;
 }
 
+.show-link:hover {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
 /* Page footer */
 footer {
 	padding: 0 25px;
