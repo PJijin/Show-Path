@@ -82,9 +82,10 @@ li {
 	filter: contrast(4) invert(1);
 }
 
-.app {
+.tree-page .show-flow {
 	height: 86vh;
 }
+
 .flex {
 	display: flex;
 }
@@ -280,11 +281,11 @@ li {
 }
 
 .good {
-	background: #f6ad55;
+	background: #68d391;
 }
 
 .possibility {
-	background: #a0aec0;
+	background: #cbd5e0;
 }
 
 /* Error Page */
@@ -343,6 +344,10 @@ footer .social-links a {
 	padding: 0 10px;
 }
 
+.__react_component_tooltip {
+	z-index: 999999;
+}
+
 /* Responsive Styles */
 
 @media screen and (max-width: 600px) {
@@ -351,9 +356,7 @@ footer .social-links a {
 		overflow: unset;
 		height: unset;
 	}
-	.app {
-		height: 100vh;
-	}
+
 	.row {
 		width: 78%;
 		display: block;

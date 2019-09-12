@@ -8,7 +8,17 @@ const css = [
 		children: [
 			{
 				name: 'CSS Architecture',
-				children: [{ name: 'BEM' }, { name: 'OOCSS' }, { name: 'SMACSS' }]
+				children: [
+					{
+						name: 'BEM',
+						legends: {
+							type: 'good',
+							message: 'Good to Know'
+						}
+					},
+					{ name: 'OOCSS' },
+					{ name: 'SMACSS' }
+				]
 			},
 			{
 				name: 'CSS Frameworks',
@@ -16,14 +26,65 @@ const css = [
 					type: 'any',
 					message: 'Learn any'
 				},
-				children: [{ name: 'Bootstrap' }, { name: 'Material' }, { name: 'Bulma' }, { name: 'Semantic UI' }]
+				children: [
+					{
+						name: 'Bootstrap',
+						legends: {
+							type: 'good',
+							message: 'Good to Know'
+						}
+					},
+					{ name: 'Material' },
+					{ name: 'Bulma' },
+					{ name: 'Semantic UI' },
+					{
+						name: 'Foundation',
+						legends: {
+							type: 'possibility',
+							message: 'Possibilities'
+						}
+					}
+				]
 			},
 			{
 				name: 'CSS Pre-processors',
-				children: [{ name: 'SASS' }, { name: 'PostCSS' }, { name: 'SCSS' }]
+				children: [
+					{
+						name: 'SASS',
+						legends: {
+							type: 'good',
+							message: 'Good to Know'
+						}
+					},
+					{
+						name: 'Less',
+						legends: {
+							type: 'possibility',
+							message: 'Possibilities'
+						}
+					},
+					{
+						name: 'Stylus',
+						legends: {
+							type: 'possibility',
+							message: 'Possibilities'
+						}
+					},
+					{
+						name: 'Post CSS',
+						legends: {
+							type: 'possibility',
+							message: 'Possibilities'
+						}
+					}
+				]
 			},
 			{
-				name: 'Responsive Design'
+				name: 'Responsive Design',
+				legends: {
+					type: 'good',
+					message: 'Good to Know'
+				}
 			}
 		]
 	}

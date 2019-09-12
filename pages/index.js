@@ -48,6 +48,7 @@ const Home = () => {
 					</Link>
 				</div>
 			</div>
+			<div className="row">Contribute to the opensource source project.</div>
 		</div>
 	);
 };

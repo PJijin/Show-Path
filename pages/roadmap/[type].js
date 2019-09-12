@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
@@ -8,6 +8,7 @@ import Details from '../../components/details';
 import RoadMap from '../../data/roadmap';
 import NotFound from '../../components/notFound';
 import ReactTooltip from 'react-tooltip';
+import { downloadImage } from './util';
 
 const Tree = dynamic(() => import('react-d3-tree'), {
 	ssr: false
@@ -43,6 +44,7 @@ const ShowRoadMap = ({ treeMode }) => {
 		ReactGA.initialize('UA-146175118-3');
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}, []);
+	const capture = useRef();
 
 	const router = useRouter();
 	const { type } = router.query;
@@ -50,6 +52,7 @@ const ShowRoadMap = ({ treeMode }) => {
 	const treeData = RoadMap[type];
 	const orientation = treeMode ? 'vertical' : 'horizontal';
 	const name = type && type.charAt(0).toUpperCase() + type.slice(1);
+	const exportPic = async () => downloadImage(capture.current);
 
 	// if (!RoadMap[type]) {
 	// 	return <NotFound />;
@@ -58,31 +61,34 @@ const ShowRoadMap = ({ treeMode }) => {
 		shape: 'circle',
 		shapeProps: {
 			r: 10
-			// fill: 'yellow'
 		}
 	};
 	return (
-		<div className="app">
+		<div className="tree-page">
 			<Head>
 				<title>ShowPath.tech - {name} Path</title>
 			</Head>
-			<Tree
-				initialDepth={1}
-				data={treeData}
-				allowForeignObjects
-				nodeLabelComponent={{
-					render: <NodeLabel setDetails={setDetails} className="myLabelComponentInSvg" />,
-					foreignObjectWrapper: {
-						y: 24
-					}
-				}}
-				translate={{ x: 250, y: 350 }}
-				nodeSvgShape={svgSquare}
-				orientation={orientation}
-				onClick={(nodeData, evt) => {
-					// setDetails(nodeData.name);
-				}}
-			/>
+
+			<div className="show-flow" ref={capture}>
+				<Tree
+					initialDepth={1}
+					data={treeData}
+					allowForeignObjects
+					nodeLabelComponent={{
+						render: <NodeLabel setDetails={setDetails} className="myLabelComponentInSvg" />,
+						foreignObjectWrapper: {
+							y: 24
+						}
+					}}
+					translate={{ x: 250, y: 350 }}
+					nodeSvgShape={svgSquare}
+					orientation={orientation}
+					onClick={(nodeData, evt) => {
+						// setDetails(nodeData.name);
+					}}
+				/>
+			</div>
+
 			{details && <Details name={details} closePreview={() => setDetails(null)} />}
 		</div>
 	);
