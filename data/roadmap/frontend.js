@@ -1,4 +1,5 @@
 import css from './css';
+import javascript from './javascript';
 
 const frontend = [
 	{
@@ -8,9 +9,7 @@ const frontend = [
 				name: 'HTML'
 			},
 			css[0],
-			{
-				name: 'JavaScript'
-			}
+			javascript[0]
 		]
 	}
 ];

@@ -1,6 +1,10 @@
 const css = [
 	{
 		name: 'CSS',
+		legends: {
+			type: 'good',
+			message: 'Good to Know'
+		},
 		children: [
 			{
 				name: 'CSS Architecture',
@@ -8,6 +12,10 @@ const css = [
 			},
 			{
 				name: 'CSS Frameworks',
+				legends: {
+					type: 'any',
+					message: 'Learn any'
+				},
 				children: [{ name: 'Bootstrap' }, { name: 'Material' }, { name: 'Bulma' }, { name: 'Semantic UI' }]
 			},
 			{

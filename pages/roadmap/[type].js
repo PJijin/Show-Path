@@ -7,16 +7,23 @@ import ReactGA from 'react-ga';
 import Details from '../../components/details';
 import RoadMap from '../../data/roadmap';
 import NotFound from '../../components/notFound';
+import ReactTooltip from 'react-tooltip';
 
 const Tree = dynamic(() => import('react-d3-tree'), {
 	ssr: false
 });
 
-const NodeLabel = ({ className, nodeData: { name }, setDetails }) => {
+const NodeLabel = ({ className, nodeData, setDetails }) => {
+	const { name, legends } = nodeData;
+	className = nodeData._children ? className + '-node' : className + '-leaf';
+
 	const [imgSource, setImageSource] = useState(`/static/icons/${name.toLowerCase()}.svg`);
 
+	const message = legends && legends.message;
+
 	return (
-		<div onClick={() => setDetails(name)} className="nodeNameBase show-link">
+		<div data-tip={message} onClick={() => setDetails(name)} className={`nodeNameBase show-link ${className}`}>
+			<ReactTooltip place="bottom" type="dark" effect="solid" />
 			<img
 				width="15px"
 				height="15px"
@@ -25,7 +32,7 @@ const NodeLabel = ({ className, nodeData: { name }, setDetails }) => {
 					setImageSource(`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`);
 				}}
 			/>
-			{name}
+			{legends && <a className={`legends ${legends.type}`}></a>} {name}
 		</div>
 	);
 };
@@ -47,7 +54,13 @@ const ShowRoadMap = ({ treeMode }) => {
 	// if (!RoadMap[type]) {
 	// 	return <NotFound />;
 	// }
-
+	const svgSquare = {
+		shape: 'circle',
+		shapeProps: {
+			r: 10
+			// fill: 'yellow'
+		}
+	};
 	return (
 		<div className="app">
 			<Head>
@@ -64,6 +77,7 @@ const ShowRoadMap = ({ treeMode }) => {
 					}
 				}}
 				translate={{ x: 250, y: 350 }}
+				nodeSvgShape={svgSquare}
 				orientation={orientation}
 				onClick={(nodeData, evt) => {
 					// setDetails(nodeData.name);

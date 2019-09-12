@@ -18,11 +18,12 @@ const mainMenu = [
 ];
 
 export default function Header({ toggleMode, currentMode: { value }, treeMode, changeTreeMode }) {
+	if (value) console.log('dark icon');
 	return (
 		<header>
 			<Link href="/" as="/">
 				<a className="logo">
-					<img src="/static/timeline.svg" className={value && 'img-light'} />
+					<img src="/static/timeline.svg" className={value ? 'img-light' : ''} />
 					ShowPath.tech
 				</a>
 			</Link>

@@ -47,7 +47,7 @@ const Details = ({ name, closePreview }) => {
 				)}
 			</div>
 			{courses.length !== 0 && (
-				<div>
+				<div className="courses">
 					<h4>Courses</h4>
 					{courses.map(course => {
 						return (
@@ -69,7 +69,7 @@ const Details = ({ name, closePreview }) => {
 			)}
 
 			{posts.length !== 0 && (
-				<div>
+				<div className="posts">
 					<h4>Posts</h4>
 					{posts.map(post => {
 						return (

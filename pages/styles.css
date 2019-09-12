@@ -234,6 +234,11 @@ li {
 	text-align: left;
 }
 
+.courses li,
+.posts li {
+	font-size: 14px;
+}
+
 /* Tree List Style  */
 
 .linkBase {
@@ -255,6 +260,25 @@ li {
 
 .nodeNameBase img {
 	margin-right: 5px;
+}
+
+.legends {
+	width: 8px;
+	height: 7px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+.any {
+	background: #ecc94b;
+}
+
+.good {
+	background: #f6ad55;
+}
+
+.possibility {
+	background: #a0aec0;
 }
 
 /* Error Page */
@@ -320,7 +344,7 @@ footer .social-links a {
 		width: 90%;
 	}
 	.app {
-		height: unset;
+		height: 100vh;
 	}
 	.row {
 		width: 78%;

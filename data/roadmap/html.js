@@ -1,6 +1,10 @@
 const html = [
 	{
-		name: 'Html'
+		name: 'Html',
+		legends: {
+			type: 'good',
+			message: 'Good to Know'
+		}
 	}
 ];
 export default html;
