@@ -349,6 +349,8 @@ footer .social-links a {
 
 .__react_component_tooltip {
 	z-index: 999999;
+	padding: 5px;
+	font-size: 10px;
 }
 
 /* Responsive Styles */
