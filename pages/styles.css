@@ -143,6 +143,7 @@ li {
 .hero {
 	width: 100%;
 	color: #333;
+	margin-bottom: 100px;
 }
 .title {
 	margin: 0;
@@ -366,11 +367,19 @@ footer .social-links a {
 	.details-preview iframe {
 		height: 100%;
 	}
+	.hero {
+		margin-bottom: 0px;
+	}
+
+	.options a {
+		display: none;
+	}
 
 	.row {
 		width: 78%;
 		display: block;
 		padding: 1rem;
+		margin: 0px auto 0px;
 	}
 	.card {
 		border: 0px;
