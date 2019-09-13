@@ -65,6 +65,17 @@ const ShowRoadMap = ({ treeMode }) => {
 		<div className="tree-page">
 			<Head>
 				<title>ShowPath.tech - {name} Path</title>
+				<meta name="twitter:card" content="summary" />
+				<meta name="twitter:creator" content="@pjijin" />
+				<meta property="og:url" content="https://showpath.tech/" />
+				<meta property="og:title" content={`ShowPath - ${name} Path`} />
+				<meta property="og:description" content="Start from 0x01." />
+				<meta property="og:image" content="https://showpath.tech/static/cover.png" />
+
+				<meta property="og:title" content={`ShowPath - ${name} Path`} />
+				<meta property="og:type" content="internet" />
+				<meta property="og:url" content="https://showpath.tech/" />
+				<meta property="og:image" content="https://showpath.tech/static/cover.png" />
 			</Head>
 
 			<div className="show-flow" ref={capture}>

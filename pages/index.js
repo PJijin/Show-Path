@@ -13,6 +13,17 @@ const Home = () => {
 		<div className="app">
 			<Head>
 				<title>ShowPath.tech - Path to Learn Programming</title>
+				<meta name="twitter:card" content="summary" />
+				<meta name="twitter:creator" content="@pjijin" />
+				<meta property="og:url" content="https://showpath.tech/" />
+				<meta property="og:title" content="Path to Learn Programming" />
+				<meta property="og:description" content="Start from 0x01." />
+				<meta property="og:image" content="https://showpath.tech/static/cover.png" />
+
+				<meta property="og:title" content="ShowPath.Tech - Path to Learn Programming" />
+				<meta property="og:type" content="internet" />
+				<meta property="og:url" content="https://showpath.tech/" />
+				<meta property="og:image" content="https://showpath.tech/static/cover.png" />
 			</Head>
 
 			<div className="hero">
@@ -48,7 +59,7 @@ const Home = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="row">Contribute to the opensource source project.</div>
+			{/* <div className="row">Contribute to the opensource source project.</div> */}
 		</div>
 	);
 };
