@@ -5,26 +5,30 @@ import Head from 'next/head';
 import { AlignJustify } from 'react-feather';
 
 const roadMaps = [
-	'Front End',
-	'Back End',
-	'Fullstack',
-	'Devops',
-	'Machine Learning',
+	'Android',
+	'Angular',
 	'Artificial Intelligence',
 	'Augmented Reality',
-	'Virtual Reality',
-	'PHP',
-	'NodeJs',
-	'Python',
-	'Go',
-	'Android',
-	'ReactJs',
-	'Angular',
-	'Vue',
+	'Back-end',
 	'CSS',
-	'HTML',
+	'Devops',
+	'Desktop',
+	'Front-end',
+	'Fullstack',
+	'Go',
+	'Html',
+	'iOs',
 	'Javascript',
-	'iOS'
+	'Machine Learning',
+	'Mobile',
+	'Nodejs',
+	'PHP',
+	'Python',
+	'Reactjs',
+	'Ruby',
+	'Vue',
+	'Virtual Reality',
+	'Web Scrapping'
 ];
 
 export default function MoreRoadMap() {
@@ -48,7 +52,7 @@ export default function MoreRoadMap() {
 				<AlignJustify />
 				<span>Select Category</span>
 			</h4>
-			<ul>
+			<ul className="more-list">
 				{roadMaps.map(item => {
 					const type = item.replace(/\s+/g, '-').toLowerCase();
 					return (

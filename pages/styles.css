@@ -210,15 +210,20 @@ li {
 /* More Roadmap page */
 .more-page {
 	padding: 1rem 3rem;
+	margin-bottom: 100px;
 }
 
 .more-page ul {
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .more-page li {
 	padding: 6px 0;
+	min-width: 300px;
 }
 
 .more-page .page-heading span {

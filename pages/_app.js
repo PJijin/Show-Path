@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import useDarkMode from 'use-dark-mode';
 import ReactGA from 'react-ga';
+import Head from 'next/head';
 
 import Header from '../components/header';
 import './styles.css';
@@ -19,6 +20,9 @@ const MyApp = ({ Component, pageProps }) => {
 
 	return (
 		<div>
+			<Head>
+				<link rel="icon" href="/static/favicon.ico" sizes="16x16" />
+			</Head>
 			<Header
 				toggleMode={darkMode.toggle}
 				currentMode={darkMode}
