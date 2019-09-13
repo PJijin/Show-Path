@@ -71,7 +71,7 @@ const css = [
 						}
 					},
 					{
-						name: 'Post CSS',
+						name: 'PostCSS',
 						legends: {
 							type: 'possibility',
 							message: 'Possibilities'

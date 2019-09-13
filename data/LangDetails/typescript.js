@@ -2,6 +2,7 @@ const typescript = {
 	description:
 		'TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language.',
 	youtube: 'https://www.youtube.com/embed/xPEMup5SPTM',
+	url: 'https://www.typescriptlang.org/',
 	courses: [],
 	posts: [
 		{

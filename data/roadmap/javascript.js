@@ -35,7 +35,7 @@ const javascript = [
 				name: 'Task Runners',
 				children: [
 					{
-						name: 'npm scripts'
+						name: 'npm-scripts'
 					},
 					{
 						name: 'Gulp'
