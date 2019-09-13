@@ -1,6 +1,7 @@
 import React from 'react';
-import { Map, Sun, Moon, GitMerge, Voicemail, MoreHorizontal } from 'react-feather';
+import { Facebook, Twitter, Sun, Moon, GitMerge, Voicemail, MoreHorizontal } from 'react-feather';
 import Link from 'next/link';
+import ReactTooltip from 'react-tooltip';
 
 const mainMenu = [
 	{
@@ -37,18 +38,37 @@ export default function Header({ toggleMode, currentMode: { value }, treeMode, c
 					);
 				})}
 				<Link href="/more" as="/more">
-					<a>
+					<a data-tip="View More">
 						<MoreHorizontal />
 					</a>
 				</Link>
 			</div>
 			<div className="options">
-				<button onClick={toggleMode}> {value ? <Sun size="14" /> : <Moon size="14" />}</button>
+				<button data-tip="Change Mode" onClick={toggleMode}>
+					{value ? <Sun size="14" /> : <Moon size="14" />}
+				</button>
 
-				<button onClick={() => changeTreeMode()}>
+				<button data-tip="Change Tree Layout" onClick={() => changeTreeMode()}>
 					{treeMode ? <GitMerge size="14" /> : <Voicemail size="14" />}
 				</button>
+				<a
+					data-tip="Share to Facebook"
+					target="_BLANK"
+					rel="noreferrer noopener"
+					href="https://www.facebook.com/sharer/sharer.php?u=https://showpath.tech"
+				>
+					<Facebook size="14" />
+				</a>
+				<a
+					data-tip="Share to Twitter"
+					target="_BLANK"
+					rel="noreferrer noopener"
+					href="https://twitter.com/intent/tweet?url=showpath.tech&text=ShowPath.tech - Path to Learn Programming&ref_src=twsrc%5Etfw"
+				>
+					<Twitter size="14" />
+				</a>
 			</div>
+			<ReactTooltip place="bottom" type="dark" effect="solid" />
 		</header>
 	);
 }

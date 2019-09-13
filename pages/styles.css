@@ -196,7 +196,8 @@ li {
 .menu a {
 	padding: 0 15px;
 }
-.options button {
+.options button,
+.options a {
 	background: transparent;
 	color: var(--color);
 	border: 0px;
