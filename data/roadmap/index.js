@@ -21,6 +21,7 @@ import machineLearning from './machineLearning';
 import augmentedReality from './augmentedReality';
 import virtualReality from './virtualReality';
 import artificialIntelligence from './artificialIntelligence';
+import webScrapping from './webScrapping';
 
 const RoadMap = {
 	fullstack,
@@ -45,6 +46,7 @@ const RoadMap = {
 	'machine-learning': machineLearning,
 	'artificial-intelligence': artificialIntelligence,
 	'augmented-reality': augmentedReality,
-	'virtual-reality': virtualReality
+	'virtual-reality': virtualReality,
+	'web-scrapping': webScrapping
 };
 export default RoadMap;
