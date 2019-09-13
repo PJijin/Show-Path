@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { X } from 'react-feather';
 
 import useComponentVisible from '../hooks/useComponentVisible';
 import LangDetails from '../data/LangDetails/';
 
 const Details = ({ name, closePreview }) => {
+	const [imgSource, setImageSource] = useState(`/static/icons/${name.toLowerCase()}.svg`);
 	const { ref, isComponentVisible } = useComponentVisible(true);
 	const lang = name.toLowerCase();
 
@@ -23,7 +24,14 @@ const Details = ({ name, closePreview }) => {
 		<div className="details-preview" ref={ref}>
 			<div className="heading">
 				<div className="flex">
-					<img src={`/static/icons/${lang}.svg`} width="25px" height="25px" />
+					<img
+						src={imgSource}
+						onError={() => {
+							setImageSource(`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`);
+						}}
+						width="25px"
+						height="25px"
+					/>
 					<h4>{name}</h4>
 				</div>
 				<button className="default-btn" onClick={closePreview}>
