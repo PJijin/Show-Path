@@ -19,6 +19,7 @@
 		"react-dom": "16.9.0",
 		"react-feather": "^2.0.3",
 		"react-ga": "^2.6.0",
+		"react-github-button": "^0.1.11",
 		"react-tooltip": "^3.11.1",
 		"use-dark-mode": "^2.3.1"
 	}

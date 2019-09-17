@@ -1,4 +1,6 @@
 import React from 'react';
+import GitHubButton from 'react-github-button';
+
 import { GitHub } from 'react-feather';
 
 export default function Footer() {
@@ -6,7 +8,7 @@ export default function Footer() {
 		<footer>
 			<div>
 				<a target="_BLANK" rel="noreferrer noopener" href="https://github.com/PJijin/Show-Path">
-					<GitHub></GitHub>
+					<GitHubButton type="stargazers" namespace="pjijin" repo="Show-Path" />
 				</a>
 			</div>
 			<div className="social-links">
