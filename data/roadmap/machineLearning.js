@@ -45,6 +45,15 @@ const machineLearning = [
 					{ name: 'Neuro.js' },
 					{ name: 'mljs' }
 				]
+			},
+			{
+				name: 'C#',
+				children: [
+					{ name: 'ML.NET' },
+					{ name: 'Accord.NET' },
+					{ name: 'AForge.NET' },
+					{ name: 'Deedle' }
+				]
 			}
 		]
 	}
