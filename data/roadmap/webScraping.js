@@ -1,6 +1,6 @@
-const webScrapping = [
+const webScraping = [
 	{
-		name: 'Web Scrapping',
+		name: 'Web Scraping',
 		children: [
 			{ name: 'Python', children: [{ name: 'Beautiful Soup' }, { name: 'Scrapy' }, { name: 'Urllib' }] },
 			{
@@ -11,4 +11,4 @@ const webScrapping = [
 		]
 	}
 ];
-export default webScrapping;
+export default webScraping;

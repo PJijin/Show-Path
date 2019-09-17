@@ -82,7 +82,7 @@ const Home = () => {
 						</Link>
 						<Link href="/roadmap/[type]" as="/roadmap/web-scraping">
 							<a className="card">
-								<h3>Web Scrapping</h3>
+								<h3>Web Scraping</h3>
 								<p>
 									Web Scraping is a technique employed to extract large amounts of data from websites
 									whereby the data is extracted and saved to a local file or to a database .
