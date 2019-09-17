@@ -22,6 +22,8 @@ import augmentedReality from './augmentedReality';
 import virtualReality from './virtualReality';
 import artificialIntelligence from './artificialIntelligence';
 import webScraping from './webScraping';
+import csharp from './csharp';
+import elixir from './elixir';
 
 const RoadMap = {
 	fullstack,
