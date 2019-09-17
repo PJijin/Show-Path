@@ -20,8 +20,7 @@ const backend = [
 			},
 			{
 				name: 'Java (Grails, Spring, Play)'
-			},
-			
+			}
 		]
 	}
 ];
