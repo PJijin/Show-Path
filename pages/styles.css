@@ -217,8 +217,7 @@ li {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: wrap; 
 }
 
 .more-page li {
