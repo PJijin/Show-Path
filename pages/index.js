@@ -80,7 +80,7 @@ const Home = () => {
 								</p>
 							</a>
 						</Link>
-						<Link href="/roadmap/[type]" as="/roadmap/web-scrapping">
+						<Link href="/roadmap/[type]" as="/roadmap/web-scraping">
 							<a className="card">
 								<h3>Web Scrapping</h3>
 								<p>

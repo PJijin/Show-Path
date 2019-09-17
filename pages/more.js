@@ -28,7 +28,7 @@ const roadMaps = [
 	'Ruby',
 	'Vue',
 	'Virtual Reality',
-	'Web Scrapping'
+	'Web Scraping'
 ];
 
 export default function MoreRoadMap() {
