@@ -33,6 +33,8 @@ const RoadMap = {
 	javascript,
 	mobile,
 	ruby,
+	csharp,
+	elixir,
 	python,
 	vue,
 	desktop,
