@@ -210,7 +210,8 @@ li {
 /* More Roadmap page */
 .more-page {
 	padding: 1rem 3rem;
-	margin-bottom: 100px;
+        min-height: 80vh;
+
 }
 
 .more-page ul {
