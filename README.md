@@ -6,6 +6,9 @@
 
 Check live on https://showpath.tech
 
+Made with ❤️ by ![Twitter Follow](https://img.shields.io/twitter/follow/JP1016v1?style=social)   ![Twitter Follow](https://img.shields.io/twitter/follow/PJijin?style=social)
+
+
 ## ✨ Features
 
 -   🗺 Show the learning path.
