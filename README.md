@@ -12,6 +12,13 @@ Check live on https://showpath.tech
 
 -   📝 Show basic information about the language.
 
+
+## 🛣 ToDo
+
+-   Multiple roadmap view
+
+-   Add more roadmap and language details
+
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome! 😍
