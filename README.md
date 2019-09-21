@@ -6,8 +6,11 @@
 
 Check live on https://showpath.tech
 
-Made with ❤️ by ![Twitter Follow](https://img.shields.io/twitter/follow/JP1016v1?style=social)   ![Twitter Follow](https://img.shields.io/twitter/follow/PJijin?style=social)
-
+  <p align="center">
+   Made with ❤️ by <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jp1016v1?style=social">
+<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PJijin?style=social">
+  </p>
+ 
 
 ## ✨ Features
 
