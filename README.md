@@ -7,8 +7,8 @@
 Check live on https://showpath.tech
 
   <p align="center">
-   Made with ❤️ by <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jp1016v1?style=social">
-<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PJijin?style=social">
+   Made with ❤️ by <a href="https://twitter.com/jp1016v1"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jp1016v1?style=social"></a>
+<a href="https://twitter.com/PJijin"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/PJijin?style=social"></a>
   </p>
  
 
