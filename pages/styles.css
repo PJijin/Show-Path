@@ -457,10 +457,21 @@ footer .social-links a {
 	.error div {
 		margin: 40px 10px;
 	}
+
+	.tree-page .show-flow {
+		height: unset;
+	}
+
 	footer {
+		display: flex;
+		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		text-align: center;
-		display: block;
+		margin: 20px 0;
+	}
+	footer div {
+		margin: 10px 0;
 	}
 }
 
