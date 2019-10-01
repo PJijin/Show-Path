@@ -60,7 +60,19 @@ export default function MoreRoadMap() {
 					return (
 						<li key={item}>
 							<Link href="/roadmap/[type]" as={`/roadmap/${type}`}>
-								<a>{item}</a>
+								<a>
+									<img
+										width="15px"
+										height="15px"
+										src={`/static/icons/${type.toLowerCase()}.svg`}
+										onError={() => {
+											// setImageSource(
+											// 	`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`
+											// );
+										}}
+									/>
+									{item}
+								</a>
 							</Link>
 						</li>
 					);
