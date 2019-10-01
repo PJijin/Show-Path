@@ -77,7 +77,7 @@ const ShowRoadMap = ({ treeMode, viewMode }) => {
 	};
 
 	return (
-		<div className="tree-page">
+		<div className={`tree-page  ${!viewMode && 'ml-30'}`}>
 			<Head>
 				<title>ShowPath.tech - {name} Path</title>
 				<meta name="twitter:card" content="summary" />
