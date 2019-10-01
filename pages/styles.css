@@ -70,6 +70,20 @@ li {
 :focus {
 	outline: 0;
 }
+
+.list-item {
+	cursor: pointer;
+}
+
+.list-item:hover {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.list-child {
+	border-left: 1px solid #333;
+}
+
 .logo {
 	display: flex;
 	align-items: center;
@@ -87,6 +101,7 @@ li {
 
 .tree-page .show-flow {
 	height: 86vh;
+	overflow: scroll;
 }
 
 .flex {
@@ -188,6 +203,26 @@ li {
 	color: var(--text-color);
 }
 
+/* List View */
+.lp-1 {
+	padding-left: 10px;
+}
+.lp-2 {
+	padding-left: 20px;
+}
+.lp-3 {
+	padding-left: 30px;
+}
+.lp-4 {
+	padding-left: 40px;
+}
+.lp-5 {
+	padding-left: 50px;
+}
+.lp-6 {
+	padding-left: 60px;
+}
+
 /* Menu style */
 
 .menu {
@@ -210,20 +245,23 @@ li {
 /* More Roadmap page */
 .more-page {
 	padding: 1rem 3rem;
-        min-height: 80vh;
-
+	min-height: 80vh;
 }
 
 .more-page ul {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 }
 
 .more-page li {
 	padding: 6px 0;
 	min-width: 300px;
+}
+
+.more-page li img {
+	margin-right: 10px;
 }
 
 .more-page .page-heading span {

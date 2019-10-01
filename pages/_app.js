@@ -9,6 +9,7 @@ import Footer from '../components/footer';
 
 const MyApp = ({ Component, pageProps }) => {
 	const [treeMode, setTreeMode] = useState(false);
+	const [viewMode, setViewMode] = useState(false);
 	const darkMode = useDarkMode(false);
 
 	React.useEffect(() => {
@@ -17,6 +18,7 @@ const MyApp = ({ Component, pageProps }) => {
 	}, []);
 
 	const changeTreeMode = () => setTreeMode(!treeMode);
+	const changeViewMode = () => setViewMode(!viewMode);
 
 	return (
 		<div>
@@ -28,8 +30,10 @@ const MyApp = ({ Component, pageProps }) => {
 				currentMode={darkMode}
 				treeMode={treeMode}
 				changeTreeMode={changeTreeMode}
+				viewMode={viewMode}
+				changeView={changeViewMode}
 			/>
-			<Component {...pageProps} treeMode={treeMode} />
+			<Component {...pageProps} treeMode={treeMode} viewMode={viewMode} />
 			<Footer />
 		</div>
 	);

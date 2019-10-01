@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Sun, Moon, GitMerge, Voicemail, MoreHorizontal } from 'react-feather';
+import { Facebook, Twitter, Sun, Moon, GitMerge, Voicemail, MoreHorizontal, List, GitBranch } from 'react-feather';
 import Link from 'next/link';
 import ReactTooltip from 'react-tooltip';
 
@@ -18,7 +18,7 @@ const mainMenu = [
 	}
 ];
 
-export default function Header({ toggleMode, currentMode: { value }, treeMode, changeTreeMode }) {
+export default function Header({ toggleMode, currentMode: { value }, treeMode, changeTreeMode, viewMode, changeView }) {
 	if (value) console.log('dark icon');
 	return (
 		<header>
@@ -48,9 +48,16 @@ export default function Header({ toggleMode, currentMode: { value }, treeMode, c
 					{value ? <Sun size="14" /> : <Moon size="14" />}
 				</button>
 
-				<button data-tip="Change Tree Layout" onClick={() => changeTreeMode()}>
-					{treeMode ? <GitMerge size="14" /> : <Voicemail size="14" />}
+				<button data-tip="Change View" onClick={() => changeView()}>
+					{viewMode ? <List size="14" /> : <GitBranch size="14" />}
 				</button>
+
+				{viewMode && (
+					<button data-tip="Change Tree Layout" onClick={() => changeTreeMode()}>
+						{treeMode ? <GitMerge size="14" /> : <Voicemail size="14" />}
+					</button>
+				)}
+
 				<a
 					data-tip="Share to Facebook"
 					target="_BLANK"
