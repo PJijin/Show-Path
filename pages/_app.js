@@ -9,7 +9,7 @@ import Footer from '../components/footer';
 
 const MyApp = ({ Component, pageProps }) => {
 	const [treeMode, setTreeMode] = useState(false);
-	const [viewMode, setViewMode] = useState(false);
+	const [viewMode, setViewMode] = useState(true);
 	const darkMode = useDarkMode(false);
 
 	React.useEffect(() => {
