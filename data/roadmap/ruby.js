@@ -24,7 +24,9 @@ const ruby = [
 							message: 'Good to Know'
 						}
 					},
-					{ name: 'Sinatara' }
+					{ name: 'Sinatra' },
+					{ name: 'Padrino' },
+					{ name: 'Ramaze' }
 				]
 			},
 			{
@@ -41,7 +43,7 @@ const ruby = [
 			},
 			{
 				name: 'Debugging',
-				children: [{ name: 'Byebug' }]
+				children: [{ name: 'Byebug' },{ name: 'pry' }]
 			}
 		]
 	}
