@@ -13,6 +13,7 @@ body[class='dark-mode'] {
 	--nodeNameBaseStroke: #777;
 	--nodeNameBaseFill: #777;
 	--selection-color: #75757542;
+	--dot-separation: #333;
 }
 
 body[class='light-mode'] {
@@ -28,6 +29,7 @@ body[class='light-mode'] {
 	--nodeNameBaseStroke: #718096;
 	--nodeNameBaseFill: #1a202c;
 	--selection-color: #79ffe1;
+	--dot-separation: #a0aec0;
 }
 
 body {
@@ -389,11 +391,58 @@ li {
 	text-decoration: underline;
 	text-decoration-style: dotted;
 }
+
+.center {
+	text-align: center;
+	text-transform: capitalize;
+	padding-bottom: 10px;
+	border-bottom: 5px dotted var(--dot-separation);
+}
+
+.lang-section {
+	display: flex;
+	margin: 40px;
+}
+
+.compare-heading {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.lang-section > div {
+	height: 73vh;
+	overflow: scroll;
+	padding: 10px;
+}
+
+.lang-section h1 {
+	font-size: 1.5rem;
+}
+
+.lang-section > div:nth-child(1) {
+	border-right: 5px dotted var(--dot-separation);
+}
+
+.lang-section {
+	line-height: 1.9rem;
+}
+
+.lang-section > div {
+	flex: 1;
+	padding: 10px;
+}
+
+pre {
+	overflow: scroll;
+}
+
 /* Page footer */
 footer {
 	padding: 0 25px;
 	display: flex;
 	justify-content: space-between;
+	margin: 0 0 2rem 0;
 }
 
 footer .social-links a {

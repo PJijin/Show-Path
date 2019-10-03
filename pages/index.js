@@ -27,6 +27,25 @@ const Home = () => {
 			</Head>
 
 			<div className="hero">
+				<h1 className="title">Compare and Learn</h1>
+				<p className="description">Learn the basics quickly</p>
+
+				<div className="tiles">
+					<div className="row">
+						<Link href="/compare/[lang]?compare=go" as="/compare/javascript?compare=go">
+							<a className="card">
+								<h3 className="compare-heading">
+									<img src={`/static/icons/javascript.svg`} width="25px" height="25px" /> Javascript /
+									Go <img src={`/static/icons/go.svg`} width="25px" height="25px" />
+								</h3>
+								<p>Compare and learn Javascript / Go</p>
+							</a>
+						</Link>
+					</div>
+				</div>
+			</div>
+
+			<div className="hero">
 				<h1 className="title">Learning Path</h1>
 				<p className="description">Start from 0x01</p>
 
