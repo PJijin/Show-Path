@@ -43,7 +43,14 @@ const css = [
 							type: 'possibility',
 							message: 'Possibilities'
 						}
+					},
+                                        { name: 'Tailwindcss',
+					legends: {
+							type: 'possibility',
+							message: 'Possibilities'
+						}
 					}
+
 				]
 			},
 			{
