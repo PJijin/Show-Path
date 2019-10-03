@@ -18,6 +18,7 @@ import vue from './vue';
 import preact from './preact';
 import svelte from './svelte';
 import emberjs from './emberjs';
+import java from './java';
 
 const CourseDetails = {
 	html,
@@ -39,6 +40,7 @@ const CourseDetails = {
 	vue,
 	svelte,
 	preact,
-	emberjs
+	emberjs,
+	java
 };
 export default CourseDetails;
