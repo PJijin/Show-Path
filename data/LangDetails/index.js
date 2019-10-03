@@ -19,6 +19,7 @@ import preact from './preact';
 import svelte from './svelte';
 import emberjs from './emberjs';
 import java from './java';
+import kotlin from './kotlin';
 
 const CourseDetails = {
 	html,
@@ -41,6 +42,7 @@ const CourseDetails = {
 	svelte,
 	preact,
 	emberjs,
-	java
+	java,
+	kotlin
 };
 export default CourseDetails;
