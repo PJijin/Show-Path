@@ -26,7 +26,7 @@ const roadMaps = [
 	'Nodejs',
 	'PHP',
 	'Python',
-	'Reactjs',
+	'React',
 	'Ruby',
 	'Vue',
 	'Virtual Reality',

@@ -1,0 +1,99 @@
+# Variables
+
+In Go variables can be declared using the var, const keyword and also using the short syntax.
+
+```
+// using the var keyword
+  var a = 10 // go detects the type here even though we don't specify
+  fmt.Println(a) // returns 10
+  fmt.Printf("variable a is of type: %T\n", a) // returns int
+
+  // using the const keyword
+  const b = 20  // It is important to note that the value of b must be known at compile-time
+  fmt.Println(b) // returns 20
+
+  // uninitialized variable returns the zero value of the type
+  var c bool
+  fmt.Println(c) // returns the zero value(zero value of a boolean is false)
+
+  // using the short syntax
+  d := "this is a variable" // go detects the type of this variable
+  fmt.Println(d) // returns this is a variable
+  fmt.Printf("d is of type: %T\n", d) // returns the type(string)
+```
+
+
+
+# Functions
+
+Using the func keyword, a function expression can be written in go.
+
+```
+func a() {
+   fmt.Println("this is a function")
+}
+  a() // returns "this is a function"
+// parameters and return type can also be specified
+  func b(a,b int) int { // takes in value of type int and returns an int
+     result := a * b
+   return result
+}
+  val := b(5,6)
+  fmt.Println(val) // returns 30
+```
+
+# Arrays
+
+Arrays are of fixed length in Go, you can't add nor remove from an array, also an array can only contain the specified type.
+
+```
+    a := [5]string{"a", "b", "c", "d", "e"} // length is 5
+    fmt.Println(a) // returns [a b c d e]
+    // But what happens if we don't specify exactly 5 items
+    b := [5]string{"a", "b", "c"}
+    fmt.Printf("%#v", b) // returns [5]string{"a", "b", "c", "", ""}
+    // "" represents the zero value(zero value of a string is "")
+```
+
+In Golang we also have slices, they are dynamic and we don't need to specify the length, values can be added and removed from a slice.
+
+```
+a := []string{"a", "b", "c"}
+    fmt.Printf("%#v", a) //  returns []string{"a", "b", "c"}
+
+    // adding to a slice, we can use the append method to add an item to a slice
+    a = append(a, "d")   // append takes in the the array and the value we are adding
+    fmt.Printf("%#v", a) // returns []string{"a", "b", "c", "d"}
+
+    // removing from a slice by slicing
+    a = append(a[0:3])   // 0 represents the index, while 3 represents the position
+    fmt.Printf("%#v", a) // returns []string{"a", "b", "c"}
+
+    // slices can also be created using the make method(in-built)
+    // the first value is the type, the second and the third value is the length and maximum capacity of the slice
+    b := make([]string, 3, 5)
+    fmt.Printf("length of b is:%#v, and cap of b is:%#v\n", len(b), cap(b)) // returns length of b is:3, and cap of b is:5
+```
+
+# Objects
+
+In Golang there is Structs which holds a field and the field type
+
+```
+type Music struct {
+    genre   string
+    title   string
+    artist  string
+    release int
+    hit     bool
+}
+ms := Music{
+    genre:   "hiphop",
+    title:   "soapy",
+    artist:  "naira marley",
+    release: 2019,
+    hit:     true,
+}
+fmt.Printf("%#v\n", ms)
+// returns main.Music{genre:"hiphop", title:"soapy", artist:"naira marley", release:2019, hit:true}
+```

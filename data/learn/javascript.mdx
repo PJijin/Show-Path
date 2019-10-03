@@ -1,0 +1,72 @@
+# Variables
+
+In Javascript variables can be declared using the let, const(ES6), and var(ES5) keyword.
+
+```
+ // using the const keyword
+  const a = 10
+  // using the let keyword
+  let b = 10
+  // using the var keyword
+  var c = 10
+  console.log(a, b, c) // returns 10, 10, 10
+```
+
+
+
+# Functions
+
+In Javascript a function expression can be written using the function keyword, arrow function(ES6) can also be used.
+
+```
+// using the function keyword
+   function a(value) {
+       return value
+   }
+   const val = a("this is the value")
+   console.log(val)
+// using arrow function
+   const b = ((value) => value)
+   const val2 = b("this is another value")
+   console.log(val2)
+```
+
+# Arrays
+
+In Javascript arrays are dynamic, items can be added and removed from the array, also Javascript being a loosely-typed language, it can hold values of different type in the array.
+
+```
+  let myArray = [1, "this is array", true, 100.30]
+  console.log(myArray) // returns [1, "this is array", true, 100.30]
+
+// we can remove the last item in an array using the pop method
+  myArray.pop()
+  console.log(myArray) // returns [1, "this is array", true]
+
+// we can add to the end of the array using the push method
+  myArray.push(20)
+  console.log(myArray) // returns [1, "this is array", true, 20]
+
+// we can remove the first item of the array using the shift method
+  myArray.shift()
+  console.log(myArray) // returns ["this is array", true, 20]
+
+// we can add to the start of the array using the unshift method
+  myArray.unshift(210)
+  console.log(myArray) // returns [210, "this is array", true, 20]
+```
+
+# Objects
+
+In JavaScript we can write Objects by specifying the key and the value in curly braces separated by a comma.
+
+```
+const music = {
+   genre: "fuji",
+   title: "consolidation",
+   artist: "kwam 1",
+   release: 2010,
+   hit: true
+}
+console.log(music) // returns {genre: "fuji", title: "consolidation", artist: "kwam 1", rele
+```

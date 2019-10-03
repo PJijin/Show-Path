@@ -19,7 +19,6 @@ const mainMenu = [
 ];
 
 export default function Header({ toggleMode, currentMode: { value }, treeMode, changeTreeMode, viewMode, changeView }) {
-	if (value) console.log('dark icon');
 	return (
 		<header>
 			<Link href="/" as="/">
