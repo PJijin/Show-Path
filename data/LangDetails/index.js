@@ -21,7 +21,7 @@ import emberjs from './emberjs';
 import java from './java';
 import kotlin from './kotlin';
 import dart from './dart';
-import flutter from './flutter'
+import flutter from './flutter';
 
 const CourseDetails = {
 	html,
