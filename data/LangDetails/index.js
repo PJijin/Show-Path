@@ -21,6 +21,7 @@ import emberjs from './emberjs';
 import java from './java';
 import kotlin from './kotlin';
 import dart from './dart';
+import flutter from './flutter';
 
 const CourseDetails = {
 	html,
@@ -45,6 +46,7 @@ const CourseDetails = {
 	emberjs,
 	java,
 	kotlin,
-	dart
+	dart,
+	flutter
 };
 export default CourseDetails;
