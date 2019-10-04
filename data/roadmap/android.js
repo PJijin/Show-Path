@@ -6,7 +6,8 @@ const android = [
 			{ name: 'Kotlin' },
 			{ name: 'Flutter' },
 			{ name: 'React Native' },
-			{ name: 'PhoneGap' }
+			{ name: 'PhoneGap' },
+			{ name: 'Ionic' }
 		]
 	}
 ];
