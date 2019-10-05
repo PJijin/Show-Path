@@ -146,7 +146,7 @@ const javascript = [
 						name: 'parcel'
 					},
 					{ name: 'Requirejs / AMD' },
-					{ name: 'Browerify' }
+					{ name: 'Browserify' }
 				]
 			}
 		]
