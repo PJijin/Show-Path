@@ -22,6 +22,7 @@ import java from './java';
 import kotlin from './kotlin';
 import dart from './dart';
 import flutter from './flutter';
+import elixir from './elixir';
 
 const CourseDetails = {
 	html,
@@ -47,6 +48,7 @@ const CourseDetails = {
 	java,
 	kotlin,
 	dart,
-	flutter
+	flutter,
+	elixir
 };
 export default CourseDetails;
