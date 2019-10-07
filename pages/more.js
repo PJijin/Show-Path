@@ -30,7 +30,8 @@ const roadMaps = [
 	'Ruby',
 	'Vue',
 	'Virtual Reality',
-	'Web Scraping'
+	'Web Scraping',
+	'Game Developer'
 ];
 
 export default function MoreRoadMap() {
