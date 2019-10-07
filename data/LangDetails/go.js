@@ -1,12 +1,13 @@
 const go = {
     description:
         'Go, also known as Golang, is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. Go is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency.',
-    youtube: 'https://www.youtube.com/watch?v=SqrbIlUwR0U',
+    youtube: 'https://www.youtube.com/embed/SqrbIlUwR0U',
     url: 'https://golang.org/',
     courses: [
         {
-            title: 'Golang in 7 hours',
-            url: 'https://www.youtube.com/embed/YS4e4q9oBaU'
+            name: 'Golang in 7 hours',
+            url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU',
+            type: 'FREE'
         }
     ],
     posts: [
