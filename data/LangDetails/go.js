@@ -6,7 +6,7 @@ const go = {
     courses: [
         {
             title: 'Golang in 7 hours',
-            url: 'https://www.youtube.com/watch?v=YS4e4q9oBaU'
+            url: 'https://www.youtube.com/embed/YS4e4q9oBaU'
         }
     ],
     posts: [
