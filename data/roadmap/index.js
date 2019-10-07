@@ -24,6 +24,7 @@ import artificialIntelligence from './artificialIntelligence';
 import webScraping from './webScraping';
 import csharp from './csharp';
 import elixir from './elixir';
+import gameDeveloper from './gameDeveloper';
 
 const RoadMap = {
 	fullstack,
@@ -51,6 +52,7 @@ const RoadMap = {
 	'artificial-intelligence': artificialIntelligence,
 	'augmented-reality': augmentedReality,
 	'virtual-reality': virtualReality,
-	'web-scraping': webScraping
+	'web-scraping': webScraping,
+	'game-developer': gameDeveloper
 };
 export default RoadMap;
