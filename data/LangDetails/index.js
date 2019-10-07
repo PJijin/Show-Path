@@ -10,6 +10,7 @@ import stylus from './stylus';
 import postcss from './postcss';
 import yarn from './yarn';
 import flow from './flow';
+import go from './go';
 import gulp from './gulp';
 import grunt from './grunt';
 import react from './react';
@@ -37,6 +38,7 @@ const CourseDetails = {
 	postcss,
 	yarn,
 	flow,
+	go,
 	gulp,
 	grunt,
 	react,
