@@ -24,6 +24,7 @@ import kotlin from './kotlin';
 import dart from './dart';
 import flutter from './flutter';
 import elixir from './elixir';
+import php from './php';
 
 const CourseDetails = {
 	html,
@@ -51,6 +52,7 @@ const CourseDetails = {
 	kotlin,
 	dart,
 	flutter,
-	elixir
+	elixir,
+	php
 };
 export default CourseDetails;
