@@ -25,6 +25,7 @@ import dart from './dart';
 import flutter from './flutter';
 import elixir from './elixir';
 import php from './php';
+import python from './python'
 
 const CourseDetails = {
 	html,
