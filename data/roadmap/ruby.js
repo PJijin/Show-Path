@@ -25,6 +25,7 @@ const ruby = [
 						}
 					},
 					{ name: 'Sinatra' },
+					{ name: 'Hanami' },
 					{ name: 'Padrino' },
 					{ name: 'Ramaze' }
 				]
