@@ -26,7 +26,7 @@ import flutter from './flutter';
 import elixir from './elixir';
 import php from './php';
 import python from './python';
-import nodejs from '.nodejs'
+import nodejs from './nodejs'
 
 const CourseDetails = {
 	html,
