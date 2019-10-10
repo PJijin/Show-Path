@@ -28,6 +28,7 @@ import php from './php';
 import python from './python';
 import nodejs from './nodejs';
 import ruby from './ruby';
+import cSharp from './cSharp';
 
 const CourseDetails = {
 	html,
@@ -59,6 +60,7 @@ const CourseDetails = {
 	php,
 	python,
 	nodejs,
-	ruby
+	ruby,
+	cSharp
 };
 export default CourseDetails;
