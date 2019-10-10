@@ -5,6 +5,7 @@ import ruby from './ruby';
 import csharp from './csharp';
 import elixir from './elixir';
 import go from './go';
+import java from './java';
 
 const backend = [
 	{
@@ -17,9 +18,7 @@ const backend = [
 			csharp[0],
 			elixir[0],
 			go[0],
-			{
-				name: 'Java (Grails, Spring, Play)'
-			}
+			java[0]
 		]
 	}
 ];

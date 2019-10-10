@@ -12,6 +12,7 @@ import nodejs from './nodejs';
 import reactjs from './reactjs';
 import vue from './vue';
 import javascript from './javascript';
+import java from './java';
 import html from './html';
 import angular from './angular';
 import mobile from './mobile';
@@ -41,6 +42,7 @@ const RoadMap = {
 	desktop,
 	ios,
 	php,
+	java,
 	android,
 	angular,
 	reactjs,
