@@ -3,6 +3,14 @@ const go = [
 		name: 'Go',
 		children: [
 			{
+				name: 'Testing',
+				children: [
+					{
+						name: 'built in unit testing'
+					}
+				]
+			},
+			{
 				name: 'Frameworks',
 				children: [
 					{
@@ -21,9 +29,6 @@ const go = [
 				children: [
 					{
 						name: 'dep'
-					},
-					{
-						name: 'GO111MODULE'
 					}
 				]
 			}
