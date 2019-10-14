@@ -29,6 +29,7 @@ import python from './python';
 import nodejs from './nodejs';
 import ruby from './ruby';
 import cSharp from './cSharp';
+import scala from './scala';
 
 const CourseDetails = {
 	html,
@@ -61,6 +62,7 @@ const CourseDetails = {
 	python,
 	nodejs,
 	ruby,
-	cSharp
+	cSharp,
+	scala
 };
 export default CourseDetails;
