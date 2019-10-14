@@ -25,6 +25,7 @@ import artificialIntelligence from './artificialIntelligence';
 import webScraping from './webScraping';
 import csharp from './csharp';
 import elixir from './elixir';
+import scala from './scala';
 import gameDeveloper from './gameDeveloper';
 
 const RoadMap = {
@@ -38,6 +39,7 @@ const RoadMap = {
 	csharp,
 	elixir,
 	python,
+	scala,
 	vue,
 	desktop,
 	ios,
