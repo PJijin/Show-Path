@@ -27,6 +27,7 @@ import csharp from './csharp';
 import elixir from './elixir';
 import scala from './scala';
 import gameDeveloper from './gameDeveloper';
+import kotlin from './kotlin';
 
 const RoadMap = {
 	fullstack,
@@ -40,6 +41,7 @@ const RoadMap = {
 	elixir,
 	python,
 	scala,
+	kotlin,
 	vue,
 	desktop,
 	ios,

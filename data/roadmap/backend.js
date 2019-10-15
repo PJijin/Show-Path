@@ -6,6 +6,8 @@ import csharp from './csharp';
 import elixir from './elixir';
 import go from './go';
 import java from './java';
+import scala from './scala';
+import kotlin from './kotlin';
 
 const backend = [
 	{
@@ -18,7 +20,9 @@ const backend = [
 			csharp[0],
 			elixir[0],
 			go[0],
-			java[0]
+			java[0],
+			scala[0],
+			kotlin[0]
 		]
 	}
 ];
