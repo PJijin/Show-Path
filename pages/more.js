@@ -17,10 +17,13 @@ const roadMaps = [
 	'Elixir',
 	'Front-end',
 	'Fullstack',
+	'Game Developer',
 	'Go',
 	'Html',
 	'iOS',
+	'Java',
 	'Javascript',
+	'Kotlin',
 	'Machine Learning',
 	'Mobile',
 	'Nodejs',
@@ -28,10 +31,10 @@ const roadMaps = [
 	'Python',
 	'React',
 	'Ruby',
+	'Scala',
 	'Vue',
 	'Virtual Reality',
-	'Web Scraping',
-	'Game Developer'
+	'Web Scraping'
 ];
 
 export default function MoreRoadMap() {
