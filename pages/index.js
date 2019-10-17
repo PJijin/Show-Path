@@ -104,7 +104,16 @@ const Home = () => {
 								<h3>Web Scraping</h3>
 								<p>
 									Web Scraping is a technique employed to extract large amounts of data from websites
-									whereby the data is extracted and saved to a local file or to a database .
+									whereby the data is extracted and saved to a local file or to a database.
+								</p>
+							</a>
+						</Link>
+						<Link href="/roadmap/[type]" as="/roadmap/game-developer">
+							<a className="card">
+								<h3>Game Developer</h3>
+								<p>
+									Game development is the process of making a video game.
+									You take an idea or a concept for a game, and you develop, program, engineer, render, record, mix, produce, test, etc. until you have a full-fledged game.
 								</p>
 							</a>
 						</Link>
