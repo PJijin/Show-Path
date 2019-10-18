@@ -80,6 +80,17 @@ const Home = () => {
 						</Link>
 					</div>
 					<div className="row">
+
+						<Link href="/roadmap/[type]" as="/roadmap/web-scraping">
+							<a className="card">
+								<h3>Web Scraping</h3>
+								<p>
+									Web Scraping is a technique employed to extract large amounts of data from websites
+									whereby the data is extracted and saved to a local file or to a database.
+								</p>
+							</a>
+						</Link>
+	
 						<Link href="/roadmap/[type]" as="/roadmap/virtual-reality">
 							<a className="card">
 								<h3>Virtual Reality</h3>
@@ -99,15 +110,20 @@ const Home = () => {
 								</p>
 							</a>
 						</Link>
-						<Link href="/roadmap/[type]" as="/roadmap/web-scraping">
+						
+					</div>
+					<div className="row">
+						
+												<Link href="/roadmap/[type]" as="/roadmap/augmented-reality">
 							<a className="card">
-								<h3>Web Scraping</h3>
+								<h3>Augmented Reality</h3>
 								<p>
-									Web Scraping is a technique employed to extract large amounts of data from websites
-									whereby the data is extracted and saved to a local file or to a database.
+									Augmented reality (AR) is a type of interactive, reality-based display environment that takes the capabilities of computer generated display, sound, text and effects to enhance the user's real-world experience.
+									It combines real and computer-based scenes and images to deliver a unified but enhanced view of the world.
 								</p>
 							</a>
 						</Link>
+	
 						<Link href="/roadmap/[type]" as="/roadmap/game-developer">
 							<a className="card">
 								<h3>Game Developer</h3>
