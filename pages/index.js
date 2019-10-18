@@ -108,6 +108,9 @@ const Home = () => {
 								</p>
 							</a>
 						</Link>
+						
+					</div>
+					<div className="row">
 						<Link href="/roadmap/[type]" as="/roadmap/web-scraping">
 							<a className="card">
 								<h3>Web Scraping</h3>
@@ -117,8 +120,6 @@ const Home = () => {
 								</p>
 							</a>
 						</Link>
-					</div>
-					<div className="row">
 						<Link href="/roadmap/[type]" as="/roadmap/game-developer">
 							<a className="card">
 								<h3>Game Developer</h3>
