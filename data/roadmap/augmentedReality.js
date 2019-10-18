@@ -10,9 +10,7 @@ const augmentedReality = [
 					{ name: 'Swift' },
 					{ name: 'C#' }
 				]
-			}
-		],
-		children: [
+			},
 			{
 				name: 'Android devices',
 				children: [
