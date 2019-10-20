@@ -38,6 +38,12 @@ const java = [
                 children: [
                     {
                         name: 'Maven'
+                    },
+                    {
+                        name: 'Gradle'
+                    },
+                    {
+                        name: 'Ant'
                     }
                 ]
             }
