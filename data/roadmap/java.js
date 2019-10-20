@@ -34,7 +34,7 @@ const java = [
                 ]
             },
             {
-                name: 'Package Manager',
+                name: 'Build Tools',
                 children: [
                     {
                         name: 'Maven'
