@@ -1,5 +1,5 @@
 const vue = {
-	description: 'The Progressive JavaScript Framework',
+	description: 'The progressive and lightweight JavaScript framework for creating UI. Compared to other popular frameworks like React or Angular, Vue is known for its easy learning curve.',
 	youtube: 'https://www.youtube.com/embed/Wy9q22isx3U',
 	url: 'https://vuejs.org/',
 	courses: [],
