@@ -11,7 +11,7 @@
 
 👨‍💻Learning Path for Programmers
 
-Check live on https://showpath.tech
+Check live on https://roadmap.now.sh/
 
   <p align="center">
    Made with ❤️ by <a href="https://twitter.com/jp1016v1"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/jp1016v1?style=social"></a>
