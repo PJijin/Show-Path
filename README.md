@@ -46,6 +46,9 @@ You can add custom roadmap by creating a new file in data/roadmap/{name}.js and 
 
 If you want to add programming language details then add language name.js in data/LangDetails.js
 
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
 ## Show your support
 
 Give a ⭐️ if this project helped you! 🥰
